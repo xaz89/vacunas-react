@@ -1,0 +1,328 @@
+@import './fontello-375955a3/css/animation.css';
+@import './fontello-375955a3/css/fontello-codes.css';
+@import './fontello-375955a3/css/fontello-embedded.css';
+@import './fontello-375955a3/css/fontello-ie7-codes.css';
+@import './fontello-375955a3/css/fontello-ie7.css';
+@import './fontello-375955a3/css/fontello.css'; 
+div,
+header,
+main,
+aside,
+nav,
+article,
+section,
+footer,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+body {
+  height: 100vh;
+  
+}
+
+.vacunas {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 65px auto 5%;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-template-rows: 65px;
+  grid-template-areas: "logo buscar";
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.buscar {
+  grid-area: buscar;
+  border-left: 1px solid rgba(128, 128, 128, 0.3);
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+aside {
+  grid-area: aside;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-right: none;
+}
+aside nav li {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-right: none;
+  border-top: none;
+  padding-left: 15px;
+  font-size: 16px;
+}
+aside nav li ul {
+  display: none;
+}
+aside nav li small {
+  margin-left: 35px;
+  font-size: 11px;
+}
+aside nav li a {
+  color: inherit;
+  text-decoration: none;
+}
+aside nav li i {
+  text-align: right;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "datos info";
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.datos {
+  grid-area: datos;
+}
+.datos section:not(.dosis-aplicacion) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info {
+  grid-area: info;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-top: none;
+  border-right: none;
+}
+
+.dosis-aplicacion {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "dosis" "aplicacion";
+}
+
+.dosis {
+  grid-area: dosis;
+  display: grid;
+  grid-template-columns: 25% repeat(5, 15%);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.dosis div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-right: none;
+  border-bottom: none;
+}
+.dosis div:first-child {
+  border-left: none;
+  font-weight: bold;
+}
+.dosis div p {
+  font-weight: bold;
+}
+
+.aplicacion {
+  grid-area: aplicacion;
+  display: grid;
+  grid-template-columns: 25% repeat(5, 15%);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.aplicacion div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-right: none;
+}
+.aplicacion div:first-child {
+  border-left: none;
+  font-weight: bold;
+}
+.aplicacion i {
+  font-size: 20px;
+}
+
+.reacciones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.reacciones div {
+  width: 25%;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.reacciones .circle {
+  width: 60px;
+  height: 60px;
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 50% 50%;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% 50%;
+  -ms-border-radius: 50% 50%;
+  -o-border-radius: 50% 50%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60px 150px auto;
+  grid-template-areas: "control" "descripcion" "animacion";
+}
+
+.control {
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+}
+.control div {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-right: none;
+  border-top: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+.control div:first-child {
+  border-left: none;
+  font-size: 10px;
+}
+.control div:last-child {
+  border-right: none;
+  font-size: 10px;
+}
+
+.descripcion {
+  display: grid;
+  overflow-y: scroll;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.animacion {
+  display: grid;
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.active {
+  background: #0D47A1;
+  color: white;
+}
+
+.nombre-vacuna {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 150%;
+}
+
+.titulo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 960px) {
+  body {
+    height: 100%;
+    
+  }
+
+  .vacunas {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "aside" "main" "footer";
+  }
+
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "datos" "info";
+  }
+
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    height: 85px;
+    width: calc(100% / 6);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    justify-content: center;
+  }
+  nav ul li i {
+    font-size: 25px;
+  }
+  nav ul li span, nav ul li small {
+    display: none;
+  }
+
+  aside {
+    height: 85px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=vacunas.css.map */
