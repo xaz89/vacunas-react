@@ -39,10 +39,10 @@ function Aside() {
             {
                 vacunas.map((secc, i) => {
                     return(
-                        <li><a href=""><i className={'demo-icon ' + secc.icono}></i><span>{secc.seccion}</span></a><small>{secc.edad}</small>
-                            <ul>
+                        <li><div> <a href=""><i className={'demo-icon ' + secc.icono}></i><span>{secc.seccion}</span></a><small>{secc.edad}</small></div> 
+                            <ul className="d-block">
                                 <li>
-                                    <a href="">{secc.nombreVacuna}</a>
+                                <div><a href="">{secc.id}</a></div> 
                                 </li>
                             </ul>
                         </li>

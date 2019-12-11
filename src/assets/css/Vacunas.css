@@ -21,14 +21,12 @@ body {
   height: 100vh;
   
 }
-
-.vacunas {
+.vacunas{
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 65px auto 5%;
   grid-template-areas: "header header" "aside main" "footer footer";
 }
-
 header {
   grid-area: header;
   display: grid;
@@ -63,18 +61,37 @@ aside {
   border-right: none;
 }
 aside nav li {
-  height: 60px;
+  height: auto;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid rgba(128, 128, 128, 0.3);
   border-right: none;
   border-top: none;
-  padding-left: 15px;
   font-size: 16px;
+}
+aside nav li div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 aside nav li ul {
   display: none;
+  overflow: scroll;
+  border: none;
+}
+aside nav li ul li {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+aside nav li ul li div {
+  margin-left: 35px;
+  border-bottom: 0;
 }
 aside nav li small {
   margin-left: 35px;
@@ -277,6 +294,10 @@ footer {
   grid-area: footer;
 }
 
+.d-block {
+  display: block;
+}
+
 @media (max-width: 960px) {
   body {
     height: 100%;
@@ -311,7 +332,8 @@ footer {
   nav ul li i {
     font-size: 25px;
   }
-  nav ul li span, nav ul li small {
+  nav ul li span,
+nav ul li small {
     display: none;
   }
 

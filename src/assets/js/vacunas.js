@@ -57,7 +57,7 @@ let vacunas =  [
         ]
     },
     {
-        id: 3,
+        id: 2,
         seccion: "Adolescentes",
         icono: "icon-adolescentes",
         edad: "10 a 19 años",
@@ -107,7 +107,7 @@ let vacunas =  [
         ]
     },
     {
-        id: 4,
+        id: 3,
         seccion: "Mujeres",
         icono: "icon-mujeres",
         edad: "20 a 59 años",
