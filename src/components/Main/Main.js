@@ -1,22 +1,24 @@
 import React from 'react';
-import anterior from './arrow-left.svg';
-import siguiente from './arrow-right.svg';
+import vacunas from '../../assets/js/vacunas';
+import anterior from '../../assets/img/arrow-left.svg';
+import siguiente from '../../assets/img/arrow-right.svg';
+
 function Main() {
     return (
 <main>
         <article className="datos">
             <section className="breadcrum">
-                Inicio / Niños / BCG
+                Inicio / {vacunas[1].seccion} / {vacunas[1].submenus[0].nombreVacuna}
             </section>
             <section className="nombre-vacuna active">
-                BCG
+            {vacunas[1].submenus[0].nombreVacuna}
             </section>
             <section className="enfermedades-previene">
                 <div className="titulo">
                     ENFERMEDADES QUE PREVIENE
                 </div>
                 <div className="texto">
-                    Tuberculosis
+                {vacunas[1].submenus[0].enfermedadesPreviene}
                 </div>
             </section>
             <section className="dosis-aplicacion">

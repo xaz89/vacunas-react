@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo-calculadora-de-vacunas.svg';
+import logo from '../../assets/img/logo-calculadora-de-vacunas.svg';
 
 function Header() {
   return (

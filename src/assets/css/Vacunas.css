@@ -1,9 +1,9 @@
-@import './fontello-375955a3/css/animation.css';
-@import './fontello-375955a3/css/fontello-codes.css';
-@import './fontello-375955a3/css/fontello-embedded.css';
-@import './fontello-375955a3/css/fontello-ie7-codes.css';
-@import './fontello-375955a3/css/fontello-ie7.css';
-@import './fontello-375955a3/css/fontello.css'; 
+@import '../fonts/fontello-375955a3/css/animation.css';
+@import '../fonts/fontello-375955a3/css/fontello-codes.css';
+@import '../fonts/fontello-375955a3/css/fontello-embedded.css';
+@import '../fonts/fontello-375955a3/css/fontello-ie7-codes.css';
+@import '../fonts/fontello-375955a3/css/fontello-ie7.css';
+@import '../fonts/fontello-375955a3/css/fontello.css'; 
 div,
 header,
 main,

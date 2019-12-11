@@ -1,4 +1,6 @@
 import React from 'react';
+import vacunas from '../../assets/js/vacunas';
+
 
 function Aside() {
     const menuPrinc = {
@@ -34,13 +36,17 @@ function Aside() {
       <aside>
         <nav>
             <ul>
-                <li><a href="">{menuPrinc.icono[0]}<span>{menuPrinc.seccion[0]}</span></a></li>
-                <li>
-                <a href="">{menuPrinc.icono[1]}<span>{menuPrinc.seccion[1]}</span></a>
-                    <small>{menuPrinc.descripcion[1]}</small>
+            {/* {
+                vacunas.seccion.map((secc, i) => {
+                    console.log(secc);
+                })
+            } */}
+                <li><a href=""><i className={'demo-icon ' + vacunas[0].icono}></i><span>{vacunas[0].seccion}</span></a></li>
+                <li><a href=""><i className={'demo-icon ' + vacunas[1].icono}></i><span>{vacunas[1].seccion}</span></a>
+                    <small>{vacunas[1].edad}</small>
                     <ul>
                         <li>
-                            <a href="">BCG</a>
+                            <a href="">{vacunas[1].submenus.nombreVacuna}</a>
                         </li>
                         <li>
                             <a href="">BCG</a>
