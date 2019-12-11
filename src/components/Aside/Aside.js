@@ -36,12 +36,20 @@ function Aside() {
       <aside>
         <nav>
             <ul>
-            {/* {
-                vacunas.seccion.map((secc, i) => {
-                    console.log(secc);
+            {
+                vacunas.map((secc, i) => {
+                    return(
+                        <li><a href=""><i className={'demo-icon ' + secc.icono}></i><span>{secc.seccion}</span></a><small>{secc.edad}</small>
+                            <ul>
+                                <li>
+                                    <a href="">{secc.nombreVacuna}</a>
+                                </li>
+                            </ul>
+                        </li>
+                    )
                 })
-            } */}
-                <li><a href=""><i className={'demo-icon ' + vacunas[0].icono}></i><span>{vacunas[0].seccion}</span></a></li>
+            }
+                {/* <li><a href=""><i className={'demo-icon ' + vacunas[0].icono}></i><span>{vacunas[0].seccion}</span></a></li>
                 <li><a href=""><i className={'demo-icon ' + vacunas[1].icono}></i><span>{vacunas[1].seccion}</span></a>
                     <small>{vacunas[1].edad}</small>
                     <ul>
@@ -68,10 +76,10 @@ function Aside() {
                 <a href="">{menuPrinc.icono[4]}<span>{menuPrinc.seccion[4]}</span></a>
                     <small>{menuPrinc.descripcion[4]}</small>
                 </li>
-                <li>
+                <li> 
                 <a href="">{menuPrinc.icono[5]}<span>{menuPrinc.seccion[5]}</span></a>
                     <small>{menuPrinc.descripcion[5]}</small>
-                </li>
+                </li>*/}
             </ul>
         </nav>
     </aside>
