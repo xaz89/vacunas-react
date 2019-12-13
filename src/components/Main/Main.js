@@ -3,12 +3,18 @@ import vacunas from '../../assets/js/vacunas';
 import anterior from '../../assets/img/arrow-left.svg';
 import siguiente from '../../assets/img/arrow-right.svg';
 
-function Main() {
+
+
+function Main(props) {
+    
     return (
 <main>
+
+
         <article className="datos">
+        
             <section className="breadcrum">
-                Inicio /{vacunas.seccion} {/*vacunas[1].seccion*/} / {/*vacunas[1].submenus[0].nombreVacuna*/}
+                Inicio / {vacunas[0].seccion} {/*vacunas[1].seccion*/} / {/*vacunas[1].submenus[0].nombreVacuna*/}
             </section>
             <section className="nombre-vacuna active">
             {/*vacunas[1].submenus[0].nombreVacuna*/}
@@ -24,18 +30,10 @@ function Main() {
             <section className="dosis-aplicacion">
                 <div className="dosis">
                     <div>Dosis</div>
-                    <div>
-                        <p>1</p><small>Dosis</small>
-                    </div>
-                    <div>
-                        <p>2</p><small>Dosis</small>
-                    </div>
-                    <div>
-                        <p>3</p><small>Dosis</small>
-                    </div>
-                    <div>
-                        <p>4</p><small>Dosis</small>
-                    </div>
+                    <div><p>1</p><small>Dosis</small></div>
+                    <div><p>2</p><small>Dosis</small></div>
+                    <div><p>3</p><small>Dosis</small></div>
+                    <div><p>4</p><small>Dosis</small></div>
                     <div>
                         <p>5</p><small>Refuerzo</small>
                     </div>
@@ -118,8 +116,12 @@ function Main() {
     </main>
 
 
-
     );
 }
+
+
+
+
+  
 
 export default Main;
