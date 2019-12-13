@@ -83,7 +83,6 @@ aside nav li div {
 }
 aside nav li ul {
   display: none;
-  overflow: scroll;
   border: none;
 }
 aside nav li ul li {

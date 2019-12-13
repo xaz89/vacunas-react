@@ -8,17 +8,17 @@ function Main() {
 <main>
         <article className="datos">
             <section className="breadcrum">
-                Inicio / {vacunas[1].seccion} / {vacunas[1].submenus[0].nombreVacuna}
+                Inicio /{vacunas.seccion} {/*vacunas[1].seccion*/} / {/*vacunas[1].submenus[0].nombreVacuna*/}
             </section>
             <section className="nombre-vacuna active">
-            {vacunas[1].submenus[0].nombreVacuna}
+            {/*vacunas[1].submenus[0].nombreVacuna*/}
             </section>
             <section className="enfermedades-previene">
                 <div className="titulo">
                     ENFERMEDADES QUE PREVIENE
                 </div>
                 <div className="texto">
-                {vacunas[1].submenus[0].enfermedadesPreviene}
+                {/*vacunas[1].submenus[0].enfermedadesPreviene*/}
                 </div>
             </section>
             <section className="dosis-aplicacion">
