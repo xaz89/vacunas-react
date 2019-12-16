@@ -6,7 +6,7 @@ const Aside = () => (
     <nav>
       <ul>
         <li>
-          <div><a href=""><i className='demo-icon icon-calculadora'></i>Calculadora</a></div>
+          <div><a href=""><i className='demo-icon icon-calculadora'></i><p className="d-block">Calculadora</p></a></div>
         </li>
         {Object.keys(vacunas).map((secc) => (
           <li>
