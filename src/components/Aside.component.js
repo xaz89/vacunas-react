@@ -11,7 +11,7 @@ const Aside = () => (
         {Object.keys(vacunas).map((secc) => (
           <li>
             <div>
-              <a ><i className={`demo-icon ${vacunas[secc].icono}`}></i><span>{secc}</span></a><small>{vacunas[secc].edad}</small>
+              <a><i className={`demo-icon ${vacunas[secc].icono}`}></i><span>{secc}</span></a><small>{vacunas[secc].edad}</small>
             </div>
             <ul className="d-block">
               {Object.keys(vacunas[secc].submenus).map((sub) => (
