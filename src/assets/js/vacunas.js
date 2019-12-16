@@ -5,9 +5,14 @@ const vacunas = {
     edad: "0 a 9 años",
     submenus: {
       "BGC": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Tuberculosis",
+        color: '#0D47A1',
+        descripcionVacuna: "Esta vacuna protege contra las formas graves de tuberculosis en los niños pequeños: la tuberculosis meníngea o cerebral, y la tuberculosis miliar o pulmonar diseminada, principalmente.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 },
+          { nombre: 'Dolor', icono: 2 },
+          { nombre: 'Llanto', icono: 3 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -17,9 +22,12 @@ const vacunas = {
         }
       },
       "Hepatitis B": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Hepatitis B",
+        color: '#FB731D',
+        descripcionVacuna: "Previene la infección por el virus de la hepatitis B, enfermedad que se transmite cuando los líquidos corporales de una persona infectada con hepatitis B se introducen en el cuerpo de otra no infectada.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -36,9 +44,14 @@ const vacunas = {
     edad: "10 a 19 años",
     submenus: {
       "BGC": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Tuberculosis",
+        color: '#0D47A1',
+        descripcionVacuna: "Esta vacuna protege contra las formas graves de tuberculosis en los niños pequeños: la tuberculosis meníngea o cerebral, y la tuberculosis miliar o pulmonar diseminada, principalmente.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 },
+          { nombre: 'Dolor', icono: 2 },
+          { nombre: 'Llanto', icono: 3 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -46,7 +59,7 @@ const vacunas = {
           cuarta: { active: false, edad: "" },
           refuerzo: { active: false, edad: "" }
         }
-      }
+      },
     }
   },
   "Mujeres": {
@@ -55,9 +68,14 @@ const vacunas = {
     edad: "20 a 59 años",
     submenus: {
       "BGC": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Tuberculosis",
+        color: '#0D47A1',
+        descripcionVacuna: "Esta vacuna protege contra las formas graves de tuberculosis en los niños pequeños: la tuberculosis meníngea o cerebral, y la tuberculosis miliar o pulmonar diseminada, principalmente.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 },
+          { nombre: 'Dolor', icono: 2 },
+          { nombre: 'Llanto', icono: 3 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -65,7 +83,7 @@ const vacunas = {
           cuarta: { active: false, edad: "" },
           refuerzo: { active: false, edad: "" }
         }
-      }
+      },
     }
   },
   "Hombres": {
@@ -74,9 +92,14 @@ const vacunas = {
     edad: "20 a 59 años",
     submenus: {
       "BGC": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Tuberculosis",
+        color: '#0D47A1',
+        descripcionVacuna: "Esta vacuna protege contra las formas graves de tuberculosis en los niños pequeños: la tuberculosis meníngea o cerebral, y la tuberculosis miliar o pulmonar diseminada, principalmente.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 },
+          { nombre: 'Dolor', icono: 2 },
+          { nombre: 'Llanto', icono: 3 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -84,7 +107,7 @@ const vacunas = {
           cuarta: { active: false, edad: "" },
           refuerzo: { active: false, edad: "" }
         }
-      }
+      },
     }
   },
   "Adultos Mayores": {
@@ -93,9 +116,14 @@ const vacunas = {
     edad: "de 60 años a más",
     submenus: {
       "BGC": {
-        enfermedadesPreviene: "Tuberculosis, tuberculosis",
-        descripcionVacuna: "La tuberculosis es una enfermedad infecciosa producida por una bacteria (el bacilo Mycobacterium tuberculosis), que ataca inicialmente sobre todo a los pulmones, aunque puede extenderse a otras muchas partes del cuerpo. Es causa de importante mortalidad, principalmente en los países pobres, pero está extendida por todo el mundo. Se contagia, sobre todo, por el contacto con enfermos que diseminan el microbio (enfermos bacilíferos) a través de la tos. Las personas que han tenido contacto con esta bacteria o que están afectadas por la enfermedad muestran un resultado positivo en la prueba cutánea de la tuberculina, también llamada PPD o Mantoux.",
-        reaccionesSecundarias: "Dolor, enrojecimiento o inflamación donde se administró la inyección.",
+        enfermedadesPreviene: "Tuberculosis",
+        color: '#0D47A1',
+        descripcionVacuna: "Esta vacuna protege contra las formas graves de tuberculosis en los niños pequeños: la tuberculosis meníngea o cerebral, y la tuberculosis miliar o pulmonar diseminada, principalmente.",
+        reaccionesSecundarias: [
+          { nombre: 'Perdida de apetito', icono: 1 },
+          { nombre: 'Dolor', icono: 2 },
+          { nombre: 'Llanto', icono: 3 }
+        ],
         dosis: {
           primera: { active: true, edad: 0 },
           segunda: { active: false, edad: "" },
@@ -103,7 +131,7 @@ const vacunas = {
           cuarta: { active: false, edad: "" },
           refuerzo: { active: false, edad: "" }
         }
-      }
+      },
     }
   }
 }

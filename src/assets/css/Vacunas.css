@@ -4,8 +4,9 @@
 @import '../fonts/fontello-375955a3/css/fontello-ie7-codes.css';
 @import '../fonts/fontello-375955a3/css/fontello-ie7.css';
 @import '../fonts/fontello-375955a3/css/fontello.css';
+@import 'https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap';
 div, header, main, aside, nav, article, section, footer, body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
 }
 
@@ -75,6 +76,7 @@ aside nav li div {
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  cursor: pointer;
 }
 
 aside nav li ul {
@@ -232,10 +234,13 @@ main {
   -ms-border-radius: 50% 50%;
   -o-border-radius: 50% 50%;
   justify-content: center;
-  display: flex;
+  display: grid;
+  padding-top: 0px;
   margin: auto;
 }
-
+.reacciones .circle img {
+  width: 60px;
+}
 .info {
   display: grid;
   grid-template-columns: 100%;
@@ -282,6 +287,11 @@ main {
 .animacion {
   display: grid;
   background: rgba(128, 128, 128, 0.1);
+  align-items: center;
+  justify-items: center;
+}
+.animacion img {
+  width: 300px;
 }
 
 .active {

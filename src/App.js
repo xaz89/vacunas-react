@@ -7,10 +7,10 @@ import Footer from './components/Footer.component';
 
 const App = (props) => (
   <div className="vacunas">
-    <Header />
-    <Aside vacunas={props.state.vacunas} />
+    <Header state={props.state} />
+    <Aside vacunas={props.state.vacunas} dispatch={props.dispatch} />
     <Main state={props.state} />
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 

@@ -21,9 +21,9 @@ const store = createStore(
 const render = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <App state={store.getState()} />
+      <App state={store.getState()} dispatch={store.dispatch} />
     </Provider>
-  , document.getElementById('root'));
+    , document.getElementById('root'));
 }
 store.subscribe(render);
 
