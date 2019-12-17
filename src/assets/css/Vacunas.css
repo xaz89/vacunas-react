@@ -3,30 +3,24 @@
 @import '../fonts/fontello-375955a3/css/fontello-embedded.css';
 @import '../fonts/fontello-375955a3/css/fontello-ie7-codes.css';
 @import '../fonts/fontello-375955a3/css/fontello-ie7.css';
-@import '../fonts/fontello-375955a3/css/fontello.css'; 
-div,
-header,
-main,
-aside,
-nav,
-article,
-section,
-footer,
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@import '../fonts/fontello-375955a3/css/fontello.css';
+@import 'https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap';
+div, header, main, aside, nav, article, section, footer, body {
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
 }
 
 body {
   height: 100vh;
-  
 }
-.vacunas{
+
+.vacunas {
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: 65px auto 5%;
   grid-template-areas: "header header" "aside main" "footer footer";
 }
+
 header {
   grid-area: header;
   display: grid;
@@ -60,6 +54,7 @@ aside {
   border: 1px solid rgba(128, 128, 128, 0.3);
   border-right: none;
 }
+
 aside nav li {
   height: auto;
   /* padding-top: 15px;
@@ -71,6 +66,7 @@ aside nav li {
   border-top: none;
   font-size: 16px;
 }
+
 aside nav li div {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -80,26 +76,34 @@ aside nav li div {
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  cursor: pointer;
 }
+
 aside nav li ul {
   display: none;
   border: none;
 }
+
 aside nav li ul li {
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  border: 0;
 }
+
 aside nav li ul li div {
   margin-left: 35px;
   border-bottom: 0;
 }
+
 aside nav li small {
   margin-left: 35px;
   font-size: 11px;
 }
+
 aside nav li a {
   color: inherit;
   text-decoration: none;
 }
+
 aside nav li i {
   text-align: right;
   display: block;
@@ -119,6 +123,7 @@ main {
 .datos {
   grid-area: datos;
 }
+
 .datos section:not(.dosis-aplicacion) {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -150,6 +155,7 @@ main {
   justify-content: center;
   text-align: center;
 }
+
 .dosis div {
   height: 100%;
   display: flex;
@@ -161,10 +167,12 @@ main {
   border-right: none;
   border-bottom: none;
 }
+
 .dosis div:first-child {
   border-left: none;
   font-weight: bold;
 }
+
 .dosis div p {
   font-weight: bold;
 }
@@ -178,6 +186,7 @@ main {
   justify-content: center;
   text-align: center;
 }
+
 .aplicacion div {
   height: 100%;
   display: flex;
@@ -188,10 +197,12 @@ main {
   border: 1px solid rgba(128, 128, 128, 0.3);
   border-right: none;
 }
+
 .aplicacion div:first-child {
   border-left: none;
   font-weight: bold;
 }
+
 .aplicacion i {
   font-size: 20px;
 }
@@ -202,6 +213,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .reacciones div {
   width: 25%;
   align-items: stretch;
@@ -211,6 +223,7 @@ main {
   flex-direction: column;
   padding: 15px;
 }
+
 .reacciones .circle {
   width: 60px;
   height: 60px;
@@ -221,10 +234,13 @@ main {
   -ms-border-radius: 50% 50%;
   -o-border-radius: 50% 50%;
   justify-content: center;
-  display: flex;
+  display: grid;
+  padding-top: 0px;
   margin: auto;
 }
-
+.reacciones .circle img {
+  width: 60px;
+}
 .info {
   display: grid;
   grid-template-columns: 100%;
@@ -236,6 +252,7 @@ main {
   display: grid;
   grid-template-columns: 25% auto 25%;
 }
+
 .control div {
   border: 1px solid rgba(128, 128, 128, 0.3);
   border-right: none;
@@ -247,10 +264,12 @@ main {
   justify-content: center;
   font-size: 19px;
 }
+
 .control div:first-child {
   border-left: none;
   font-size: 10px;
 }
+
 .control div:last-child {
   border-right: none;
   font-size: 10px;
@@ -268,6 +287,11 @@ main {
 .animacion {
   display: grid;
   background: rgba(128, 128, 128, 0.1);
+  align-items: center;
+  justify-items: center;
+}
+.animacion img {
+  width: 300px;
 }
 
 .active {
@@ -300,22 +324,18 @@ footer {
 @media (max-width: 960px) {
   body {
     height: 100%;
-    
   }
-
   .vacunas {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "header" "aside" "main" "footer";
   }
-
   main {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "datos" "info";
   }
-
   nav ul {
     display: flex;
   }
@@ -331,15 +351,21 @@ footer {
   nav ul li i {
     font-size: 25px;
   }
-  nav ul li span,
-nav ul li small {
+  nav ul li span, nav ul li small {
     display: none;
   }
-
   aside {
     height: 85px;
   }
+  aside nav li div {
+    border: 0;
+    padding: 0;
+  }
+  .d-block {
+    display: none;
+  }
 }
+
 * {
   padding: 0;
   margin: 0;

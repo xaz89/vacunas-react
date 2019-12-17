@@ -1,22 +1,17 @@
 import React from 'react';
 import './assets/css/Vacunas.css';
-import vacunas from './assets/js/vacunas';
-import Header from './components/Header/Header.js';
-import Aside from './components/Aside/Aside.js';
-import Main from './components/Main/Main.js';
-import Footer from './components/Footer/Footer.js';
+import Header from './components/Header.component';
+import Aside from './components/Aside.component';
+import Main from './components/Main.component';
+import Footer from './components/Footer.component';
 
-function App(props) {
-  
-
-  return (
-    <div className="vacunas">
-      <Header />
-      <Aside />
-      <Main name={vacunas.text}/>
-      <Footer />
-    </div>
-  );
-}
+const App = (props) => (
+  <div className="vacunas">
+    <Header state={props.state} />
+    <Aside vacunas={props.state.vacunas} dispatch={props.dispatch} />
+    <Main state={props.state} />
+    {/* <Footer /> */}
+  </div>
+);
 
 export default App;
