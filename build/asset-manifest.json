@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/vacunas-react/static/css/main.d4ba66d2.chunk.css",
+    "main.js": "/vacunas-react/static/js/main.ac90bc78.chunk.js",
+    "main.js.map": "/vacunas-react/static/js/main.ac90bc78.chunk.js.map",
+    "runtime-main.js": "/vacunas-react/static/js/runtime-main.781a25ea.js",
+    "runtime-main.js.map": "/vacunas-react/static/js/runtime-main.781a25ea.js.map",
+    "static/js/2.cbf37b27.chunk.js": "/vacunas-react/static/js/2.cbf37b27.chunk.js",
+    "static/js/2.cbf37b27.chunk.js.map": "/vacunas-react/static/js/2.cbf37b27.chunk.js.map",
+    "index.html": "/vacunas-react/index.html",
+    "precache-manifest.c2690e74bf71be5089ca5b155e812435.js": "/vacunas-react/precache-manifest.c2690e74bf71be5089ca5b155e812435.js",
+    "service-worker.js": "/vacunas-react/service-worker.js",
+    "static/css/main.d4ba66d2.chunk.css.map": "/vacunas-react/static/css/main.d4ba66d2.chunk.css.map",
+    "static/js/2.cbf37b27.chunk.js.LICENSE": "/vacunas-react/static/js/2.cbf37b27.chunk.js.LICENSE",
+    "static/media/apetito.svg": "/vacunas-react/static/media/apetito.a95f42a9.svg",
+    "static/media/arrow-left.svg": "/vacunas-react/static/media/arrow-left.a99c6b0f.svg",
+    "static/media/arrow-right.svg": "/vacunas-react/static/media/arrow-right.36c03e1c.svg",
+    "static/media/dolor.svg": "/vacunas-react/static/media/dolor.ca7bfdce.svg",
+    "static/media/Vacunas.css": "/vacunas-react/static/media/fontello.c8e5e6e5.woff",
+    "static/media/img-hepatitis-2.svg": "/vacunas-react/static/media/img-hepatitis-2.687a3c04.svg",
+    "static/media/img-tuberculosis-1.svg": "/vacunas-react/static/media/img-tuberculosis-1.2084adcb.svg",
+    "static/media/llanto.svg": "/vacunas-react/static/media/llanto.21db7e67.svg",
+    "static/media/logo-calculadora-de-vacunas.svg": "/vacunas-react/static/media/logo-calculadora-de-vacunas.4c8d7e00.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.781a25ea.js",
+    "static/js/2.cbf37b27.chunk.js",
+    "static/css/main.d4ba66d2.chunk.css",
+    "static/js/main.ac90bc78.chunk.js"
+  ]
+}
